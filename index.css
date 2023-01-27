@@ -1,0 +1,66 @@
+html{
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+}
+body{
+    margin:0;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.background{
+    position: fixed;
+    object-fit: cover;
+    width: 2000px;
+    z-index: -5;
+    opacity: .4;
+    top:-300px;
+}
+button{
+    margin: 8px;
+    border-radius: 8px;
+    height:fit-content;
+    width:fit-content;
+    padding: 30px 30px;
+}
+button:disabled{
+    color:white;
+}
+button:disabled:hover{
+    background-color: rgb(111, 111, 111);
+    scale:1;
+    cursor: default;
+}
+button:hover{
+    cursor: pointer;
+    scale:1.05;
+    background-color: rgb(245, 211, 255);
+}
+.container{
+    display: flex;
+    height:96vh;
+    justify-content: center;
+    align-items: center;
+}
+textarea{
+    height:400px;
+    width:400px;
+}
+#green-div{
+    height:200px;
+    width:200px;
+    background-color: rgb(60, 228, 65);
+    padding:10px;
+    margin:10px;
+}
+h1{
+    margin:10px;
+}
+input{
+    margin:10px;
+    height:30px;
+    width:200px;
+}
+input::placeholder{
+    padding-left: 10px;
+}
